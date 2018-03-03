@@ -16,7 +16,7 @@
         当出现多值属性时，就需要把它转换为多个单值属性或1:N 的弱实体:
     </p>
     <div class="row">
-        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/弱实体的概念.jpg" alt="the image to upload" />
+        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/weakEntity.jpg" alt="the image to upload" />
     </div>
 
     <hr/>
@@ -25,12 +25,8 @@
         <p>从FD角度来说，对于关系模式R的FD集中的每个非平凡的FD X -> Y，都有X是超键，或Y的每个属性都是主属性。<br></p>
         传递依赖的3种情形：
         
-    <div class="row">
-        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/弱实体的概念.jpg" alt="the image to upload" />
-    </div>
-    
-    <div class="row">
-        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/违反3NF的3种传递依赖.jpg" alt="the image to upload" />
+        <div class="row">
+            <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/not3NF.jpg" alt="the image to upload" />
     </div>
     
     <p>不满足3NF范式的关系模式必定存在非平凡的FD X->Z ,Z是非主属性，X不是候选键。也即是一个传递依赖，这时应分解为R1（XZ），R2（Y），其中Y=U-Z。分解后的R1，R2若仍不是3NF应继续上述分解。</p>
@@ -42,6 +38,9 @@
         对于关系模式的FD集中的每个FD X -> Y,都有X是R的超键，那么称R是BCNF的模式。
     </p>
     <p>这个定义表明如果非平凡的FD X->Y 中不包含超键，那么Y必定传递依赖于候选键。<br></p>
+    <div class="row">
+        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/DB-BCNF.jpg" alt="the image to upload" />
+    </div>
     
     <h5>模式设计方法结论</h5>
     关系模式R相对于函数依赖集F分解成数据库模式p = {R1,...,Rk},一般应具备3个特性：
