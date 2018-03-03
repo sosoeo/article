@@ -16,7 +16,7 @@
         当出现多值属性时，就需要把它转换为多个单值属性或1:N 的弱实体:
     </p>
     <div class="row">
-        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/weakEntity.jpg" alt="the image to upload" />
+        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/weakEntity.png" alt="the image to upload" />
     </div>
 
     <hr/>
@@ -26,7 +26,7 @@
         传递依赖的3种情形：
         
         <div class="row">
-            <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/not3NF.jpg" alt="the image to upload" />
+            <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/not3NF.png" alt="the image to upload" />
     </div>
     
     <p>不满足3NF范式的关系模式必定存在非平凡的FD X->Z ,Z是非主属性，X不是候选键。也即是一个传递依赖，这时应分解为R1（XZ），R2（Y），其中Y=U-Z。分解后的R1，R2若仍不是3NF应继续上述分解。</p>
