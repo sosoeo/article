@@ -39,7 +39,7 @@
     </p>
     <p>这个定义表明如果非平凡的FD X->Y 中不包含超键，那么Y必定传递依赖于候选键。<br></p>
     <div class="row">
-        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/DB-BCNF.jpg" alt="the image to upload" />
+        <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/BCNF.png" alt="the image to upload" />
     </div>
     
     <h5>模式设计方法结论</h5>

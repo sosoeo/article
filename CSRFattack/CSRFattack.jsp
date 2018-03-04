@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-
-<h1>CSRF攻击介绍</h1>
+<div class="container">
+    <p class="lead">CSRF攻击</p>
 
 
 <h3>安全问题起因</h3>
@@ -10,6 +10,9 @@
 1. 登录受信站点A
 2. 不登出A的情况下，访问网站B
 3. 点击或触发网站B或者仅仅是一个带有链接的图片上的访问A的链接
+<div class="row">
+    <img id="imgDispId" src="${pageContext.request.contextPath}/resources/article/${goods.link}/src/CSRF.png" alt="the image to upload" />
+</div>
 
 <h3>关键点</h3>
 - 危险链接所在位置（网站，图片）都不是A网站本身，而位于A网站之外。（引出Referer字段验证方案）
@@ -20,5 +23,6 @@
 - 1. 验证Referer字段，过滤不是从本站页面发出的请求（有些请求没有该字段，该字段也可以伪造）
 - 2. 参考：www.ibm.com/developerWorks/  CSRF攻击的应对之道
 
-2017.12.27
+<small>作者：翟光 2017.12.27</small>
 
+</div>
