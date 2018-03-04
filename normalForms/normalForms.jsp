@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <div class="container">
-    <h1>关系模式的范式理论要点</h1>
+    <h1 class="bd-title">关系模式的范式理论要点</h1>
     <hr/>
     <h5>范式有什么用？</h5>
     <p>关系模式的范式是衡量关系模式设计的好与坏的评价标准。<br>关系存在冗余和异常现象和FD的存在有密切的关系，如果没有FD，关系模式也就不可能有冗余问题了。当FD存在时，关系就可能存在冗余和异常问题。<br>而范式正是基于FD的概念。常用的范式有1NF,3NF 和BCNF。2NF范式

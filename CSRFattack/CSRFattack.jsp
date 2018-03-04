@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <div class="container">
-    <p class="lead">CSRF攻击</p>
+    <h1 class="bd-title">CSRF攻击</h1>
 
 
 <h3>安全问题起因</h3>
